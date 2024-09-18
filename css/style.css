@@ -1,0 +1,134 @@
+:root{
+    --logocolor:#F9E400;
+    --khaki:#f8d8befa;
+    --darkkhaki: #E65C19;
+    --lightgreen:#FFFAB7;
+    --lightbrown: #F6B17A;
+    --white:white;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url("../media/landingbgi.jpg");
+    background-size: cover;
+    background-position: cover;
+    height: 100vh;
+    color:var(--lightbrown);
+}
+header a{
+    text-decoration:none;
+    color:var(--logocolor);
+    min-width: 76px;
+}
+header{
+    display:flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+#logo{
+    flex:2;
+    font-size: 1.5rem;
+    min-width: 302px;
+}
+nav{
+    flex:1;
+    display:flex;
+    align-items: center;
+}
+nav a{
+    flex:.5;
+}
+nav a:hover{
+    color:var(--darkkhaki);
+}
+.maintext{
+    display: flex;
+    flex-direction:column;
+    height: 60vh;
+    justify-content:center;
+    padding: 2rem;
+}
+.tagline1{
+    color:var(--lightgreen);
+    font-size:2rem;
+    font-weight:bolder;
+}
+.tagline2{
+    color:var(--khaki);
+    font-size:1.5rem;
+}
+.maintext div{
+    margin-top:.6rem;
+}
+.maintext button{
+    width: 15vw;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    padding: .8em;
+    color:var(--white);
+    background-color:var(--darkkhaki);
+    border-color:var(--darkkhaki);
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(222px,1fr));
+    background:linear-gradient(to right,rgb(113, 225, 240),rgb(60, 167, 126));
+    color:var(--white);
+}
+#menuheading, #locheading{
+    background:linear-gradient(to right,rgb(113, 225, 240),rgb(60, 167, 126));
+    font-size: 2em;
+    color:var(--khaki);
+    display:flex;
+    justify-content: center;
+}
+.menu th{
+    color:var(--lightbrown);
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display:flex;
+    justify-content: center;
+    margin-top: .7rem;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+    grid-row:span 2;
+}
+.locations{
+    display:flex;
+    flex-wrap:wrap;
+    background:linear-gradient(to right,rgb(113, 225, 240),rgb(60, 167, 126));
+    color:var(--white);
+}
+.locations h2{
+    color:var(--lightbrown);
+    margin-bottom: .7rem;
+}
+.locations div{
+    flex: 1;
+    padding: 1.5rem;
+    min-width: 177px;
+}
+footer{
+    background-color: rgb(34, 31, 31);
+    padding: .25rem 1rem;
+    color: blue;
+}
+i{
+    margin-right:.5rem;
+}
+
